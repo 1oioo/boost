@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>FAQ | Crackn's Boosting Services</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      background: #0e0e13;
+      color: #ddd;
+      font-family: 'Poppins', sans-serif;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 40px 20px;
+      user-select: none;
+    }
+
+    header {
+      width: 100%;
+      background: #1a1a24;
+      color: #c47aff;
+      font-size: 2.5rem;
+      font-weight: 700;
+      text-align: center;
+      padding: 30px 0;
+      letter-spacing: 0.1em;
+      text-shadow: 0 0 10px #9f6cff55;
+      border-bottom: 1px solid #292939;
+      user-select: none;
+    }
+
+    nav {
+      width: 100%;
+      background: #13131a;
+      padding: 16px 0;
+      display: flex;
+      justify-content: center;
+      gap: 40px;
+      border-bottom: 1px solid #292939;
+      user-select: none;
+      margin-bottom: 40px;
+    }
+
+    nav a {
+      color: #b388ff;
+      font-weight: 600;
+      text-decoration: none;
+      text-transform: uppercase;
+      font-size: 1rem;
+      position: relative;
+      padding: 6px 0;
+      transition: color 0.25s ease;
+    }
+
+    nav a::after {
+      content: '';
+      position: absolute;
+      width: 0%;
+      height: 2px;
+      bottom: -5px;
+      left: 0;
+      background: #865dff;
+      transition: width 0.3s ease;
+    }
+
+    nav a:hover, nav a:focus {
+      color: #a68eff;
+      outline: none;
+    }
+
+    nav a:hover::after, nav a:focus::after {
+      width: 100%;
+    }
+
+    main {
+      max-width: 900px;
+      width: 100%;
+      color: #cccce0;
+    }
+
+    h1 {
+      font-size: 2.25rem;
+      color: #d1b9ff;
+      margin-bottom: 24px;
+      user-select: text;
+      text-align: center;
+    }
+
+    .faq-item {
+      margin-bottom: 24px;
+      user-select: text;
+    }
+
+    .faq-item h3 {
+      font-size: 1.25rem;
+      color: #cfc4ff;
+      margin-bottom: 8px;
+      cursor: pointer;
+      position: relative;
+      padding-right: 20px;
+    }
+
+    .faq-item h3::after {
+      content: '+';
+      position: absolute;
+      right: 0;
+      top: 0;
+      font-weight: 700;
+      font-size: 1.25rem;
+      line-height: 1;
+      transition: transform 0.3s ease;
+      user-select: none;
+    }
+
+    .faq-item.open h3::after {
+      transform: rotate(45deg);
+    }
+
+    .faq-answer {
+      max-height: 0;
+      overflow: hidden;
+      font-size: 1rem;
+      line-height: 1.5;
+      color: #bbb;
+      transition: max-height 0.4s ease, padding 0.4s ease;
+    }
+
+    .faq-item.open .faq-answer {
+      max-height: 500px; /* enough for content */
+      padding-top: 8px;
+    }
+
+    footer {
+      margin-top: 80px;
+      width: 100%;
+      background: #12121a;
+      color: #888;
+      text-align: center;
+      padding: 20px 0;
+      font-size: 0.9rem;
+      border-top: 1px solid #292939;
+      user-select: none;
+    }
+
+    /* Responsive */
+    @media (max-width: 720px) {
+      main {
+        padding: 0 10px;
+      }
+      nav {
+        gap: 24px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+<header>CRACKN'S BOOSTING SERVICES</header>
+
+<nav>
+  <a href="index.html">Services</a>
+  <a href="faq.html">FAQ</a>
+</nav>
+
+<main>
+  <h1>Frequently Asked Questions</h1>
+
+  <div class="faq-item">
+    <h3>Will I get banned for using your boosting services?</h3>
+    <div class="faq-answer">
+      Nah, you won’t. We play with you using our stealthy cheats that dodge all the anti-cheat systems, so your account stays clean.
+    </div>
+  </div>
+
+  <div class="faq-item">
+    <h3>How long does a typical boost take?</h3>
+    <div class="faq-answer">
+      It depends on what kind of boost you want. Fast rage boosts get you wins quick, but the more low-key closet boosts take a bit longer. We’ll figure out timing and price when you hit us up on Discord.
+    </div>
+  </div>
+
+  <div class="faq-item">
+    <h3>Can you boost on consoles like Xbox or PlayStation?</h3>
+    <div class="faq-answer">
+      Yep! We’ve got console rank boosting down, using smart methods to get you your rank safely and fast.
+    </div>
+  </div>
+
+  <div class="faq-item">
+    <h3>Do I need to share my account info?</h3>
+    <div class="faq-answer">
+      Nope. You play alongside us, so no account sharing needed. Just join our Discord and make a ticket to get started.
+    </div>
+  </div>
+
+  <div class="faq-item">
+    <h3>What games do you boost?</h3>
+    <div class="faq-answer">
+      Right now we do Rainbow Six Siege, Rust, and a few others. We use cheats to make sure you get those wins reliably.
+    </div>
+  </div>
+</main>
+
+<footer>
+  © 2025 Crackn's Boosting Services | Multi-Game Boosting Only
+</footer>
+
+<script>
+  // FAQ toggle functionality
+  document.querySelectorAll('.faq-item h3').forEach(question => {
+    question.addEventListener('click', () => {
+      const parent = question.parentElement;
+      parent.classList.toggle('open');
+    });
+  });
+</script>
+
+</body>
+</html>

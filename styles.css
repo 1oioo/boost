@@ -1,0 +1,231 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: #0e0e13;
+  color: #ddd;
+  font-family: 'Poppins', sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 100vh;
+}
+
+header {
+  width: 100%;
+  background: #1a1a24;
+  color: #c47aff;
+  font-size: 2.5rem;
+  font-weight: 700;
+  text-align: center;
+  padding: 30px 0;
+  letter-spacing: 0.1em;
+  text-shadow: 0 0 10px #9f6cff55;
+  border-bottom: 1px solid #292939;
+  user-select: none;
+}
+
+nav {
+  width: 100%;
+  background: #13131a;
+  padding: 16px 0;
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  border-bottom: 1px solid #292939;
+  user-select: none;
+}
+
+nav a {
+  color: #b388ff;
+  font-weight: 600;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 1rem;
+  position: relative;
+  padding: 6px 0;
+  transition: color 0.25s ease;
+}
+
+nav a::after {
+  content: '';
+  position: absolute;
+  width: 0%;
+  height: 2px;
+  bottom: -5px;
+  left: 0;
+  background: #865dff;
+  transition: width 0.3s ease;
+}
+
+nav a:hover, nav a:focus {
+  color: #a68eff;
+  outline: none;
+}
+
+nav a:hover::after, nav a:focus::after {
+  width: 100%;
+}
+
+main {
+  max-width: 1100px;
+  width: 90%;
+  margin: 60px auto 40px;
+  text-align: center;
+  flex-grow: 1;
+}
+
+h1 {
+  font-size: 2.5rem;
+  color: #cfaaff;
+  margin-bottom: 20px;
+  text-shadow: 0 0 5px #000;
+  user-select: none;
+}
+
+p.lead {
+  font-size: 1.2rem;
+  color: #b6b6c7;
+  max-width: 700px;
+  margin: 0 auto 50px;
+  line-height: 1.6;
+  user-select: text;
+}
+
+.services {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  justify-content: center;
+  margin-top: 50px;
+  user-select: none;
+}
+
+.service-card {
+  background: #1c1c26;
+  border-radius: 12px;
+  padding: 30px 20px 40px;
+  width: 320px;
+  border: 1px solid #2d2d3a;
+  box-shadow: 0 0 10px #1a1a24;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.service-card:hover, .service-card:focus-within {
+  transform: translateY(-5px);
+  box-shadow: 0 0 20px #865dff55;
+  outline: none;
+}
+
+/* Fixed image size */
+.service-card img {
+  width: 100%;
+  height: 140px;
+  object-fit: cover;
+  border-radius: 10px;
+  margin-bottom: 15px;
+  user-select: none;
+}
+
+.service-card h3 {
+  font-size: 1.5rem;
+  color: #d4b8ff;
+  margin-bottom: 10px;
+  user-select: text;
+}
+
+.service-card p {
+  font-size: 1rem;
+  color: #b3b3c6;
+  min-height: 80px;
+  margin-bottom: 20px;
+  user-select: text;
+}
+
+.purchase-btn, .join-btn {
+  background: #865dff;
+  color: #fff;
+  border: none;
+  padding: 12px 24px;
+  border-radius: 25px;
+  font-weight: 700;
+  font-size: 1rem;
+  cursor: pointer;
+  margin-top: auto;
+  transition: background 0.3s ease, box-shadow 0.3s ease, transform 0.2s ease;
+  box-shadow: 0 0 8px #865dff88;
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  user-select: none;
+  max-width: 220px;
+  justify-content: center;
+}
+
+.purchase-btn:hover, .purchase-btn:focus,
+.join-btn:hover, .join-btn:focus {
+  background: #744ee0;
+  box-shadow: 0 0 20px #a68effcc, 0 0 30px #865dffcc;
+  transform: scale(1.05);
+  outline: none;
+}
+
+.purchase-btn:active, .join-btn:active {
+  transform: scale(0.95);
+  box-shadow: 0 0 12px #744ee0cc;
+}
+
+.join-btn img {
+  width: 18px;
+  height: 18px;
+  user-select: none;
+}
+
+/* Ripple effect for join button */
+.ripple {
+  position: absolute;
+  border-radius: 50%;
+  transform: scale(0);
+  animation: ripple-animation 600ms linear;
+  background-color: rgba(255, 255, 255, 0.3);
+  pointer-events: none;
+  z-index: 10;
+}
+
+@keyframes ripple-animation {
+  to {
+    transform: scale(4);
+    opacity: 0;
+  }
+}
+
+/* Responsive */
+@media (max-width: 720px) {
+  nav {
+    gap: 24px;
+  }
+  .services {
+    flex-direction: column;
+    align-items: center;
+  }
+  .service-card {
+    width: 90%;
+  }
+  .purchase-btn, .join-btn {
+    max-width: 100%;
+    padding: 12px 20px;
+  }
+}
+
