@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Crackn's Boosting Services | Services</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+<header>CRACKN'S BOOSTING SERVICES</header>
+
+<nav>
+  <a href="index.html">Home</a>
+  <a href="services.html">Services</a>
+  <a href="about.html">About</a>
+  <a href="contact.html">Contact</a>
+</nav>
+
+<main>
+  <h1>Boosting Services</h1>
+
+  <section class="services" aria-label="Boosting Services">
+    <div class="service-card" tabindex="0">
+      <img src="https://i.ytimg.com/vi/osky8kHv7jU/hq720.jpg?sqp=-oaymwEhCK4FEIIDSFryq4qpAxMIARUAAAAAGAElAADIQj0AgKJD&rs=AOn4CLCUbJvplBybD-XQCINOb4VRb2XGQw" alt="Rainbow Six Siege Rage Boost" />
+      <h3>Rage Cheating Boost R6</h3>
+      <p>Need fast wins in R6? Our rage cheats get you boosted instantly — minimal wait, max results.</p>
+      <button class="purchase-btn" aria-label="Make a ticket for Rage Cheating Boost R6">Make a Ticket</button>
+    </div>
+
+    <div class="service-card" tabindex="0">
+      <img src="https://i.ytimg.com/vi/osky8kHv7jU/hq720.jpg?sqp=-oaymwEhCK4FEIIDSFryq4qpAxMIARUAAAAAGAElAADIQj0AgKJD&rs=AOn4CLCUbJvplBybD-XQCINOb4VRb2XGQw" alt="Rainbow Six Siege Legit Boost" />
+      <h3>Legit Cheating Boost R6</h3>
+      <p>If you're trying to avoid rollbacks, we offer legit-style cheats on separate accounts. Slower, safer, more discreet.</p>
+      <button class="purchase-btn" aria-label="Make a ticket for Legit Cheating Boost R6">Make a Ticket</button>
+    </div>
+
+    <div class="service-card" tabindex="0">
+      <img src="https://media.sketchfab.com/models/80a034d06212461492b8e60842756366/thumbnails/ed627fb722394351a579c23211a12630/20ac63a2da1f4e94b07bea11a7ec24c5.jpeg" alt="Rust Boost" />
+      <h3>Rust Boost</h3>
+      <p>If you need a Rust cheater to hop on your server and get you loaded, hop in our Discord and make a ticket. We'll get you right.</p>
+      <button class="purchase-btn" aria-label="Make a ticket for Rust Boost">Make a Ticket</button>
+    </div>
+  </section>
+
+  <section id="amazing-services" aria-label="Amazing Services and Great Boosts">
+    <h2>Amazing Services & Great Boosts</h2>
+    <div>
+      <div>
+        <h3>Fast & Reliable Boosting</h3>
+        <p>Get boosted quickly without sacrificing safety. Our trusted cheats deliver consistent wins on your schedule.</p>
+      </div>
+
+      <div>
+        <h3>Private & Secure Accounts</h3>
+        <p>Your account safety is our top priority. We use discreet, private cheats and separate accounts to avoid rollbacks and bans.</p>
+      </div>
+
+      <div>
+        <h3>Multi-Game Expertise</h3>
+        <p>Whether it’s Rainbow Six Siege, Rust, or other titles, we offer boosting services across multiple games with top-tier cheats.</p>
+      </div>
+
+      <div>
+        <h3>Affordable Pricing</h3>
+        <p>Get the best boosts without breaking the bank. Prices are personalized and fair — discussed directly in Discord tickets.</p>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  © 2025 Crackn's Boosting Services | Multi-Game Boosting Only
+</footer>
+
+<script>
+  function redirectDiscord() {
+    window.location.href = 'https://discord.gg/SwEuJCCsgD';
+  }
+
+  document.querySelectorAll('.purchase-btn').forEach(btn => {
+    btn.addEventListener('click', () => {
+      redirectDiscord();
+    });
+  });
+
+  window.addEventListener('load', () => {
+    document.querySelectorAll('.service-card').forEach((card, i) => {
+      card.style.setProperty('--delay', `${i * 0.22}s`);
+    });
+  });
+</script>
+
+</body>
+</html>

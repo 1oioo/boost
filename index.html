@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Crackn's Boosting Services | Home</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+<header>CRACKN'S BOOSTING SERVICES</header>
+
+<nav>
+  <a href="index.html">Home</a>
+  <a href="services.html">Services</a>
+  <a href="about.html">About</a>
+  <a href="contact.html">Contact</a>
+</nav>
+
+<main>
+  <h1>Welcome to Crackn's Boosting</h1>
+  <p class="lead">
+    We provide boosting services for a variety of games using powerful, reliable cheats. Whether it’s Rainbow Six Siege, Rust, or others — we’ve got you covered.
+  </p>
+  <p class="lead">
+    Prices are personalized based on your requirements and discussed privately in our Discord tickets. Join us there to get started.
+  </p>
+  <button class="join-btn" aria-label="Join our Discord">
+    <img src="https://cdn-icons-png.flaticon.com/512/2111/2111370.png" alt="Discord" />
+    Join Our Discord
+  </button>
+</main>
+
+<footer>
+  © 2025 Crackn's Boosting Services | Multi-Game Boosting Only
+</footer>
+
+<script>
+  function redirectDiscord() {
+    window.location.href = 'https://discord.gg/SwEuJCCsgD';
+  }
+
+  const joinBtn = document.querySelector('.join-btn');
+  joinBtn.addEventListener('click', e => {
+    const circle = document.createElement('span');
+    circle.classList.add('ripple');
+    const rect = joinBtn.getBoundingClientRect();
+    circle.style.left = `${e.clientX - rect.left}px`;
+    circle.style.top = `${e.clientY - rect.top}px`;
+    joinBtn.appendChild(circle);
+
+    setTimeout(() => {
+      circle.remove();
+    }, 600);
+
+    setTimeout(() => {
+      redirectDiscord();
+    }, 200);
+  });
+</script>
+
+</body>
+</html>
