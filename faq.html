@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Crackn's Boosting Services | FAQ</title>
+  <link rel="stylesheet" href="styles.css" />
+  <style>
+    main {
+      max-width: 900px;
+      margin: 60px auto 80px;
+      padding: 0 20px;
+      font-family: 'Poppins', sans-serif;
+      color: #ddd;
+    }
+
+    h1 {
+      text-align: center;
+      color: #cfaaff;
+      margin-bottom: 40px;
+      user-select: none;
+    }
+
+    .faq-item {
+      background: #1c1c26;
+      border-radius: 12px;
+      margin-bottom: 20px;
+      border: 1px solid #2d2d3a;
+      box-shadow: 0 0 10px #1a1a24;
+      user-select: none;
+    }
+
+    .faq-question {
+      cursor: pointer;
+      padding: 18px 24px;
+      font-size: 1.2rem;
+      font-weight: 600;
+      color: #d4b8ff;
+      position: relative;
+      user-select: text;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .faq-question::after {
+      content: '▼';
+      font-size: 1rem;
+      color: #865dff;
+      transition: transform 0.3s ease;
+    }
+
+    .faq-item.open .faq-question::after {
+      transform: rotate(-180deg);
+    }
+
+    .faq-answer {
+      max-height: 0;
+      overflow: hidden;
+      padding: 0 24px;
+      font-size: 1rem;
+      color: #b3b3c6;
+      line-height: 1.5;
+      transition: max-height 0.35s ease, padding 0.35s ease;
+      user-select: text;
+    }
+
+    .faq-item.open .faq-answer {
+      max-height: 400px;
+      padding: 16px 24px 24px;
+    }
+
+    footer {
+      margin-top: 60px;
+      width: 100%;
+      background: #12121a;
+      color: #888;
+      text-align: center;
+      padding: 20px 0;
+      font-size: 0.9rem;
+      border-top: 1px solid #292939;
+      user-select: none;
+    }
+  </style>
+</head>
+<body>
+
+<header>CRACKN'S BOOSTING SERVICES</header>
+
+<nav>
+  <a href="index.html">Services</a>
+  <a href="faq.html">FAQ</a>
+</nav>
+
+<main>
+  <h1>Frequently Asked Questions</h1>
+
+  <section class="faq-item">
+    <div class="faq-question" tabindex="0">Will I get banned for using your boosting services?</div>
+    <div class="faq-answer">
+      No, you will not get banned using our boosting services because all of our cheats that we use are undetectable and bypass all anti-cheat features.
+    </div>
+  </section>
+
+  <section class="faq-item">
+    <div class="faq-question" tabindex="0">How fast can I get boosted in Rust and Rainbow Six Siege?</div>
+    <div class="faq-answer">
+      Boosting is usually fast and depends on how many games you want. Most boosts are done within 24–72 hours depending on how active you are.
+    </div>
+  </section>
+
+  <section class="faq-item">
+    <div class="faq-question" tabindex="0">Do you play on my account?</div>
+    <div class="faq-answer">
+      No. We never touch your account. You play on your own account — we just queue with you and carry the games using cheats.
+    </div>
+  </section>
+
+  <section class="faq-item">
+    <div class="faq-question" tabindex="0">Can I choose what rank or items I want to reach?</div>
+    <div class="faq-answer">
+      Yes, you can tell us exactly what rank, skins, or goals you're aiming for. We’ll play alongside you and get you there fast using our cheats.
+    </div>
+  </section>
+
+  <section class="faq-item">
+    <div class="faq-question" tabindex="0">How do I start the boosting process?</div>
+    <div class="faq-answer">
+      Just join our Discord and make a ticket. Let us know what game and goal you're after, and we’ll give you a price and set up your sessions.
+    </div>
+  </section>
+</main>
+
+<footer>
+  © 2025 Crackn's Boosting Services | Multi-Game Boosting Only
+</footer>
+
+<script>
+  document.querySelectorAll('.faq-question').forEach(question => {
+    question.addEventListener('click', () => {
+      question.parentElement.classList.toggle('open');
+    });
+    question.addEventListener('keydown', e => {
+      if (e.key === 'Enter' || e.key === ' ') {
+        e.preventDefault();
+        question.parentElement.classList.toggle('open');
+      }
+    });
+  });
+</script>
+
+</body>
+</html>
